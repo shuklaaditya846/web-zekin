@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-transform: uppercase;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+header>div, header>div>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header>div>ul{
+    gap: 2em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu-bar{
+    display: none;
+}
+
+section{
+    padding: 16px;
+}
+
+hr:nth-of-type(2), hr:nth-of-type(4){
+    display: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.top > div.socials > ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    gap: 12px;
+}
+
+.we-are {
+    max-width: 425px;
+    text-align: right;
+}
+
+.we-are>p{
+    font-weight: bold;
+}
+
+.scroll-down {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: max-content;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 16px;
+    float: right;
+    gap: 12px;
+}
+
+.one > h1{
+    /* font-size: 80px; */
+    font-size: 8.5vw;
+}
+
+.workplace-background {
+    background-image: url(https://placehold.co/1080x768/grey/light);
+    /* background-size: 1080px 768px; */
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    width: calc(100vw + 0px);
+    position: relative;
+    left: -16px;
+    padding: 26px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workplace-background > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 16px);
+    gap: unset;
+}
+
+.ready {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc(100% - 16px);
+}
+
+.ready > p {
+    width: 75%;
+    max-width: 420px;
+}
+
+.ready > *, .workplace-background > ul > * {
+    color: white;
+}
+
+section:nth-child(5) {
+    display: flex;
+    padding: 30px 16px;
+    gap: 1em;
+}
+
+.small-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+span.dot {
+    width: 6px;
+    height: 6px;
+    display: flex;
+    background: black;
+    border-radius: 100%;
+    margin: 4px 0px;
+}
+
+section:nth-child(5) > div:nth-child(1){
+    width: 427px;
+}
+
+.about-us-2nd-part{
+    width: -webkit-fill-available;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stats > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em 0em;
+}
+
+section:nth-child(7) {
+    padding: 30px 0px;
+}
+
+section:nth-child(7) > .small-heading{
+    padding: 0px 16px;
+}
+
+.no-of-services{
+    padding: 20px 16px;
+}
+
+.service {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    border-bottom: 1px solid;
+}
+
+div.services > div:nth-child(1) {
+    border-top: 1px solid;
+}
+
+.service:hover {
+    background: black;
+    color: white;
+    transition: cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
+}
+
+.image-popup {
+    position: absolute;
+    left: 50%;
+    translate: -50% -35%;
+    transform: rotateZ(-45deg);
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+
+    transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.6s;
+
+    border-radius: 16px;
+}
+
+.image-visible{
+    height: 150px;
+    width: 200px;
+    transform: rotateZ(5deg);
+    transition-delay: 500ms;
+}
+
+.experts-team{
+    padding: 20px 0px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% - 32px);
+    max-width: 1100px;
+    margin: auto;
+    /* gap: 2%; */
+}
+
+.thumbnail {
+    flex: 1; /* This will make the items equally share the available width */
+    max-width: calc(50% - 20px); /* For 2 items in a row with some spacing */
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.img-holder {
+    width: -webkit-fill-available;
+    overflow: hidden;
+    outline: 2px solid;
+    border-radius: 2px;
+    margin: 15px 0px;
+
+    /* background-image: url(https://placehold.co/200x150/pink/light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+
+    position: relative;
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.img-demo {
+    /* width: -webkit-fill-available; */
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.more {
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact > div {
+    max-width: 400px;
+    width: 100%;
+}
+
+.ul-container {
+    font-size: 28px;
+}
+
+.ul-container > ul > li {
+    padding: 4px 0px;
+}
+
+.newsletter {
+    text-align: left;
+}
+
+form {
+    margin: 20px 0px;
+    border-bottom: 1px solid;
+    text-align: left;
+    padding: 8px 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+input[type="email"] {
+    font-size: 14px;
+    border: 0px;
+    width: -webkit-fill-available;
+    padding: 6px;
+}
+
+form > button {
+    border: 0px;
+    background-color: unset;
+}
+
+.two > h1 {
+    font-size: 30vw;
+}
+
+footer{
+    padding: 16px;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ul-container-in-footer{
+    display: none;
+}
+
+/* copyright statement in the list */
+li.copyright{
+    display: unset;
+}
+
+/* copyright statement out of list */
+p.copyright{
+    display: none;
+}
+
+
+/* @media only screen and (max-width: 426px){ */
+@media only screen and (max-width: 626px){
+
+    header>div>ul{
+        display: none;
+    }
+
+    .menu-bar{
+        display: unset;
+    }
+
+    .socials{
+        display: none;
+    }
+
+    .we-are{
+        text-align: left;
+    }
+
+    .one > h1{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .workplace-background{
+        background-image: url(https://placehold.co/1080x768/grey/light);
+        background-size: cover;
+        background-position: center;
+        height: 530px;
+        width: calc(100vw + 0px);
+        position: relative;
+        left: -16px;
+        padding: 26px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .workplace-background > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 16px);
+        gap: 1em;
+    }
+
+    .ready > p {
+        width: 75%;
+        max-width: 420px;
+    }
+
+    section:nth-child(5) {
+        flex-wrap: wrap;
+    }
+
+    .stats {
+        justify-self: center;
+    }
+
+    .thumbnails{
+        flex-direction: column;
+    }
+
+    .thumbnail{
+        max-width: -webkit-fill-available;
+    }
+
+
+    .contact{
+        justify-content: center;
+    }
+
+    /* alternative option - shift contact links to footer */
+
+    .ul-container{
+        display: none;
+    }
+
+    .ul-container-in-footer{
+        display: unset;
+    }
+
+    .two > h1 {
+        font-size: 29vw;
+    }
+
+    footer {
+        display: flex;
+        column-count: 2;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2em;
+    }
+
+    footer > ul{
+        flex-direction: column;
+    }
+
+    /* copyright statement in the list */
+    li.copyright{
+        display: none;
+    }
+
+    /* copyright statement out of list */
+    p.copyright{
+        display: unset;
+        font-size: 14px;
+    }
+}
